@@ -8,14 +8,15 @@
    <title>Hello Fashion</title>
 </head>
 <body>
+  <script src="../commercersite/Utilisateur/index.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--font-awesome cdn-->
     <script src="https://kit.fontawesome.com/bd04541c3a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-md navbar-light bg-dark">
-        <a href="index.html" class="navbar-brand text-success font-weight-bolder" >Fahion</a>
+      <nav class="navbar navbar-expand-md navbar-light bg-dark">
+        <a href="index.html" class="navbar-brand" ><img src="../commercersite/Photo/FHmoo.png" style="max-height: 50px;" alt="logo"></a>
         <div class="container">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,15 +44,16 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light font-weight-bold ">Panier</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Recherches" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Recherches</button>
-            </form>
           </div>
+        </div>   
+        <div class="logSign d-flex">
+          <a href="../commercersite/Utilisateur/inscriptions.html" role="button" class="btn btn-secondary" >S'inscrire</a>
+          <a href="../commercersite/Utilisateur/SeConnecter.html" role="button" class="btn btn-success">S'idenfier</a>
         </div>
+        </div>
+
       </nav>
+    
       <!--Carousel d'cceuil-->
       <div class="container mt-2">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -167,25 +169,38 @@
                 </div>
                 <div class="card-footer">
                     <div class="d-grid">
-                        <button class="btn btn-primary" type="button">Commencer</button>
+            
+                      <button class="btn btn-primary" type="button">Commencer</button>
                       </div>
                 </div>
               </div>
             </div>
           </div>
       </div>
-      <footer class="container-fluid bg-secondary mt-3">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <!--footer-->
+      <section id="footer" class="bg-dark">
+        <div class="container">
+          <div class="row text-center pr-5 ">
+              <div class="col-lg-4 col-md-6 footer-newsletter">
+                <h4 class="text-light">Recevez nos offres spéciales</h4>
+                <p class="text-light">Abonnez vous à nos newsletter et découvrir Toutes actualités et mise à jour sur HFMood</p>
+          
+            </div>
+            
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+            <hr>
           </div>
-
-
-      </footer>
-
+        </div>
+      </section>
 </body>
 </html
